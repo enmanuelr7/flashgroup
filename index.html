@@ -14,49 +14,79 @@
 <body>
     <div class="container-fluid px-0">
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg">
-            <a class="" href="#"><img src="./images/logo.png" alt="Flash Group Logo" class="logo"></a>
-            <button class="navbar-toggler menu-btn" type="button" data-toggle="collapse"
-                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto align-items-center">
-                    <a class="nav-item nav-link px-3" href="#">SERVICIO</a>
-                    <a class="nav-item nav-link px-3" href="#">PRINCIPIOS</a>
-                    <a class="nav-item nav-link px-3" href="#">ETAPAS</a>
-                    <a class="nav-item nav-link px-3" href="#">OBJETIVOS</a>
-                    <a class="nav-item nav-link px-3" href="#">CONTACTO</a>
-                    <a class="nav-item nav-link pl-3 pr-0" href="#">
+        <nav id="navbar">
+            <div class="menu d-flex">
+                <span class="logo">
+                    <a href="https://google.com">
+                        <img src="./images/logo.png" alt="Flash Group Logo" class="logo">
+                    </a>
+                </span>
+                <span class="items items-desktop d-flex justify-content-end align-items-center w-100">
+                    <a class="px-2 px-lg-3" href="#">SERVICIO</a>
+                    <a class="px-2 px-lg-3" href="#">PRINCIPIOS</a>
+                    <a class="px-2 px-lg-3" href="#">ETAPAS</a>
+                    <a class="px-2 px-lg-3" href="#">OBJETIVOS</a>
+                    <a class="px-2 px-lg-3" href="#">CONTACTO</a>
+                    <a class="pl-2 pr-0" href="#">
                         <span class="wa-btn">
                             <i class="fab fa-whatsapp"></i>
                         </span>
                     </a>
-                </div>
+                </span>
+
+                <a href="#" class="wa-btn mobile-only">
+                    <i class="fab fa-whatsapp mr-2"></i>
+                    <span>Escribinos</span>
+                </a>
+
             </div>
         </nav>
         <!-- SECTION 1 -->
-        <div class="section1">
-            <div class="row no-gutters">
-                <div class="col-12 col-sm-6 d-flex col1">
-                    <span class="txt">
-                        <div class="txt1 mb-3 mb-sm-2">
-                            Vende de manera rentable, eficiente y sostenible
-                        </div>
-                        <div class="txt2 mb-4 mb-sm-3">
-                            Diseñamos la estrategia perfecta para potenciar tus ventas en Mercado Libre.
-                        </div>
-                        <a class="btn">
-                            Únete
+        <span>
+            <div class="section1 position-relative">
+                <div class="menu d-flex">
+                    <span class="logo">
+                        <a href="https://google.com">
+                            <img src="./images/logo.png" alt="Flash Group Logo" class="logo">
                         </a>
                     </span>
+                    <span class="items items-desktop d-flex justify-content-end align-items-center w-100">
+                        <a class="px-2 px-lg-3" href="#">SERVICIO</a>
+                        <a class="px-2 px-lg-3" href="#">PRINCIPIOS</a>
+                        <a class="px-2 px-lg-3" href="#">ETAPAS</a>
+                        <a class="px-2 px-lg-3" href="#">OBJETIVOS</a>
+                        <a class="px-2 px-lg-3" href="#">CONTACTO</a>
+                        <a class="pl-2 pr-0" href="#">
+                            <span class="wa-btn">
+                                <i class="fab fa-whatsapp"></i>
+                            </span>
+                        </a>
+                    </span>
+                    <a href="#" class="wa-btn mobile-only">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        <span>Escribinos</span>
+                    </a>
                 </div>
-                <div class="col-12 col-sm-6 d-flex col2">
-                    <img src="./images/office image.png" class="office-img" alt="Office Meeting">
+                <div class="row no-gutters">
+                    <div class="col-12 col-sm-6 d-flex col1">
+                        <span class="txt">
+                            <div class="txt1 mb-3 mb-sm-2">
+                                Vende de manera rentable, eficiente y sostenible
+                            </div>
+                            <div class="txt2 mb-4 mb-sm-3">
+                                Diseñamos la estrategia perfecta para potenciar tus ventas en Mercado Libre.
+                            </div>
+                            <a class="btn" href="google.com">
+                                Únete
+                            </a>
+                        </span>
+                    </div>
+                    <div class="col-12 col-sm-6 d-flex col2">
+                        <img src="./images/office image.png" class="office-img" alt="Office Meeting">
+                    </div>
                 </div>
             </div>
-        </div>
+        </span>
     </div>
 
 
@@ -75,6 +105,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script>
+        const limit = 65;
+        window.onscroll = function () {
+            const currentScrollPos = window.pageYOffset;
+            console.log(currentScrollPos);
+            if (currentScrollPos > limit) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-5.6em";
+            }
+        }
+    </script>
 </body>
 
 </html>
