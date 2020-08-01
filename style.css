@@ -4,26 +4,22 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-div.section-1 {
-  background-image: linear-gradient(135deg, #fec63d, #ffa601);
-  height: 100vh;
-}
-
-img.logo {
+.logo {
   height: 65px;
 }
 
-div.container {
+.container {
   position: relative;
 }
 
-nav.navbar {
+.navbar {
   position: absolute;
   z-index: 5;
   width: 100%;
+  padding: 0.8em 4.8em;
 }
 
-nav.navbar a.nav-item {
+.navbar a.nav-item {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
@@ -45,43 +41,137 @@ button.menu-btn:focus {
   outline: none;
 }
 
-button.menu-btn i {
+button.menu-btn {
+  background-color: transparent;
+  border: none;
   font-size: 30px;
   color: #232547;
+  padding: 0;
 }
 
-img.office-img {
-  width: 80%;
+/* SECTION 1 */
+
+.section1 {
+  background-image: linear-gradient(135deg, #fec73d, #ffa601);
+  display: flex;
 }
 
-div.section-1-txt-1 {
+.section1::before {
+  content: "";
+  background-image: url(./images/section1-bg.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  opacity: 0.08;
+}
+
+.section1 .txt {
+  color: #fff;
+}
+
+.section1 .txt1 {
   font-weight: bold;
-  font-size: 40px;
-  color: #fff;
-  line-height: 45px;
 }
 
-div.section-1-txt-2 {
-  font-size: 20px;
-  color: #fff;
-}
-
-span.section-1-txt {
-  width: 90%;
-}
-
-a.section-1-btn {
+.section1 .btn {
   background-image: linear-gradient(45deg, #313466, #232547);
   color: #fff;
-  padding: 10px 20px;
   border-radius: 30px;
   display: inline-block;
-  font-size: 20px;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
 }
 
-div.section-1 {
-  padding-top: 75px;
+/* > SMALL SCREEN */
+@media (max-width: 575px) {
+  .section1 .col2 {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .navbar {
+    padding: 0.5em 1.5em;
+  }
+  .section1 {
+    padding: 75px 1.5em 0 1.5em;
+  }
+  .section1 {
+    height: 812px;
+  }
+  .office-img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .section1 .txt1 {
+    font-size: 1.8em;
+  }
+  .section1 .txt2 {
+    font-size: 1.2em;
+  }
+  .section1 .btn {
+    padding: 0.3em 0.8em;
+    font-size: 1.4em;
+    width: 100%;
+  }
+
+  .section1 .col1 {
+    padding-top: 2em;
+  }
+  .section1 .col2 {
+    padding-bottom: 1.5em;
+  }
+}
+
+/* > MEDIUM SCREEN */
+@media (min-width: 576px) {
+  .office-img {
+    max-height: 90%;
+    max-width: 90%;
+  }
+  .section1 .col1 {
+    align-items: center;
+  }
+  .section1 .col2 {
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .section1 .txt1 {
+    font-size: 1.5em;
+  }
+  .section1 .txt2 {
+    font-size: 0.8em;
+  }
+  .section1 .btn {
+    padding: 0.3em 0.8em;
+    font-size: 0.8em;
+  }
+  .navbar {
+    padding: 0.8em 4.8em;
+  }
+  .section1 {
+    padding: 75px 4.8em 0 4.8em;
+  }
+}
+
+/* > LARGE SCREEN */
+@media (min-width: 992px) and (orientation: landscape) {
+  .section1 {
+    height: 100vh;
+  }
+  .section1 .txt1 {
+    font-size: 2.5em;
+  }
+  .section1 .row {
+    height: 100%;
+  }
+  .section1 .txt2 {
+    font-size: 1.5em;
+  }
+  .section1 .btn {
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+  }
 }
