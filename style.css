@@ -54,14 +54,13 @@ nav {
 /* SECTION 1 */
 
 .section1 {
-  padding: 0 1.5em;
   height: 812px;
   background-image: linear-gradient(135deg, #fec73d, #ffa601);
 }
 
 .section1 .menu {
   position: relative;
-  padding: 0.8em 0;
+  padding: 0.8em 1.5em;
 }
 
 .section1::before {
@@ -80,6 +79,7 @@ nav {
   padding-top: 2em;
   margin-bottom: 1.5em;
   height: 100%;
+  padding: 0 1.5em;
 }
 
 .section1 .txt {
@@ -112,6 +112,7 @@ nav {
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 0 1.5em;
 }
 
 .section1 .office-img {
@@ -119,7 +120,12 @@ nav {
   max-width: 100%;
 }
 
-
+.hola {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: none;
+}
 
 /* > MEDIUM SCREEN */
 @media (min-width: 576px) {
@@ -132,18 +138,22 @@ nav {
     width: 2em;
   }
   .section1 .office-img {
-    max-height: 90%;
-    max-width: 90%;
+    max-height: 95%;
+    max-width: 95%;
   }
   .section1 .col1 {
     align-items: center;
     padding-top: 0;
     margin-bottom: 0;
     height: auto;
+    padding-left: 2em;
+    padding-right: 0;
   }
   .section1 .col2 {
     justify-content: flex-end;
     align-items: center;
+    padding-right: 2em;
+    padding-left: 0;
   }
   .section1 .txt1 {
     font-size: 1.5em;
@@ -157,7 +167,7 @@ nav {
     width: auto;
   }
   .section1 {
-    padding: 0 2em;
+    /* padding: 0 2em; */
     height: unset;
   }
   .mobile-only {
@@ -174,36 +184,46 @@ nav {
 }
 
 /* MEDIUM SCREEN LANDSCAPE*/
- @media (min-width: 576px) and (orientation: landscape) {
+@media (min-width: 576px) and (orientation: landscape) {
   .section1 .office-img {
     max-width: 90%;
     max-height: 90%;
   }
   .section1 {
-    height: 100vh;
+    height: calc(100vh + 93px);
   }
   .section1 .row {
     height: calc(100vh - 5.6em);
   }
- }
-
-
-
+  .hola {
+    display: block;
+  }
+}
 
 /* > LARGE SCREEN*/
 @media (min-width: 992px) {
-  
+
+  .menu {
+    padding: .8em 4.8em;
+  }
+
   .logo {
     height: 4em;
   }
-  .menu {
+  .section1 .menu {
     padding: 0.8em 4.8em;
   }
   .items {
     font-size: 1.2em;
   }
-  .section1 {
-    padding: 0 4.8em;
+  .section1 .col1 {
+    padding-left: 4.8em;
+    padding-right: 0;
+  }
+
+  .section1 .col2 {
+    padding-right: 4.8em;
+    padding-left: 0;
   }
   .section1 .txt1 {
     font-size: 2.4em;
@@ -217,4 +237,56 @@ nav {
   }
 }
 
-
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+/* Animation */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+}
