@@ -259,6 +259,21 @@ nav {
   background-color: #fff;
 }
 /* Animation */
+.section1 .txt {
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
@@ -300,7 +315,7 @@ nav {
 /* SECTION 2 */
 
 .section2 {
-  padding: 0 .8em;
+  padding: 0 0.8em;
   text-align: center;
 }
 
@@ -311,13 +326,14 @@ nav {
   color: var(--dark-blue);
 }
 
-.section2 .txt2, .section2 .txt3 {
+.section2 .txt2,
+.section2 .txt3 {
   line-height: 1.5em;
   font-size: 1em;
   color: var(--medium-blue);
 }
 
-@media(min-width: 720px) {
+@media (min-width: 720px) {
   .section2 {
     padding: 0 1.5em;
   }
@@ -326,13 +342,14 @@ nav {
     font-size: 1.8em;
     line-height: unset;
   }
-  
-  .section2 .txt2, .section2 .txt3 {
+
+  .section2 .txt2,
+  .section2 .txt3 {
     line-height: unset;
   }
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .section2 {
     padding: 0 4.8em;
   }
@@ -341,8 +358,9 @@ nav {
     font-size: 2.4em;
     line-height: 1.4em;
   }
-  
-  .section2 .txt2, .section2 .txt3 {
+
+  .section2 .txt2,
+  .section2 .txt3 {
     line-height: unset;
   }
 }
