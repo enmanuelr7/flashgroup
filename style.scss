@@ -21,7 +21,7 @@ body {
 nav {
   position: fixed;
   z-index: 5;
-  top: -5.6em;
+  top: -5.6rem;
   width: 100%;
   background-image: linear-gradient(135deg, #fec63dfa, #ffd263fa);
   transition: top 0.3s;
@@ -29,7 +29,7 @@ nav {
 }
 
 .menu {
-  padding: 0.8em 1.5em;
+  padding: 0.8rem 1.5rem;
   justify-content: space-between;
 }
 
@@ -45,7 +45,7 @@ nav {
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
 }
 
 .menu .items a {
@@ -55,7 +55,7 @@ nav {
 }
 
 .logo {
-  height: 3em;
+  height: 3rem;
 }
 
 .items {
@@ -71,7 +71,7 @@ nav {
 
 .section1 .menu {
   position: relative;
-  padding: 0.8em 1.5em;
+  padding: 0.8rem 1.5rem;
 }
 
 .section1::before {
@@ -87,10 +87,10 @@ nav {
 }
 
 .section1 .col1 {
-  padding-top: 2em;
-  margin-bottom: 1.5em;
+  padding-top: 2rem;
+  margin-bottom: 1.5rem;
   height: 100%;
-  padding: 0 1.5em;
+  padding: 0 1.5rem;
 }
 
 .section1 .txt {
@@ -99,11 +99,11 @@ nav {
 
 .section1 .txt1 {
   font-weight: bold;
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 .section1 .txt2 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .section1 .btn {
@@ -118,8 +118,8 @@ nav {
   font-weight: bold;
   text-align: center;
   cursor: pointer;
-  padding: 0.3em 0.8em;
-  font-size: 1.4em;
+  padding: 0.3rem 0.8rem;
+  font-size: 1.4rem;
   width: 100%;
 }
 
@@ -127,7 +127,7 @@ nav {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 0 1.5em;
+  padding: 0 1.5rem;
 }
 
 .section1 .office-img {
@@ -145,11 +145,11 @@ nav {
 @media (min-width: 576px) {
   .items {
     display: flex;
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
   .menu .wa-btn {
-    height: 2em;
-    width: 2em;
+    height: 2rem;
+    width: 2rem;
   }
   .section1 .office-img {
     max-height: 95%;
@@ -160,24 +160,24 @@ nav {
     padding-top: 0;
     margin-bottom: 0;
     height: auto;
-    padding-left: 2em;
+    padding-left: 2rem;
     padding-right: 0;
   }
   .section1 .col2 {
     justify-content: flex-end;
     align-items: center;
-    padding-right: 2em;
+    padding-right: 2rem;
     padding-left: 0;
   }
   .section1 .txt1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
   .section1 .txt2 {
-    font-size: 1em;
+    font-size: 1rem;
   }
   .section1 .btn {
-    padding: 0.3em 0.8em;
-    font-size: 1em;
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
     width: auto;
   }
   .section1 {
@@ -199,7 +199,7 @@ nav {
 
 @media (min-width: 768px) and (orientation: portrait) {
   .section1 {
-    padding-bottom: 3em;
+    padding-bottom: 3rem;
   }
 }
 
@@ -213,7 +213,7 @@ nav {
     height: calc(100vh + 93px);
   }
   .section1 .row {
-    height: calc(100vh - 5.6em);
+    height: calc(100vh - 5.6rem);
   }
   .waves-effect {
     display: block;
@@ -223,36 +223,36 @@ nav {
 /* > LARGE SCREEN*/
 @media (min-width: 992px) {
   .menu {
-    padding: 0.8em 4.8em;
+    padding: 0.8rem 4.8rem;
   }
 
   .logo {
-    height: 3.5em;
+    height: 3.5rem;
   }
   .section1 .menu {
-    padding: 0.8em 4.8em;
+    padding: 0.8rem 4.8rem;
   }
   .items {
-    font-size: 1em;
+    font-size: 1rem;
   }
   .section1 .col1 {
-    padding-left: 4.8em;
+    padding-left: 4.8rem;
     padding-right: 0;
   }
 
   .section1 .col2 {
-    padding-right: 4.8em;
+    padding-right: 4.8rem;
     padding-left: 0;
   }
   .section1 .txt1 {
-    font-size: 2.4em;
+    font-size: 2.4rem;
   }
   .section1 .txt2 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
   .section1 .btn {
-    padding: 0.5em 1em;
-    font-size: 1.5em;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -279,7 +279,7 @@ nav {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-2em);
+    transform: translateY(-2rem);
   }
   to {
     opacity: 1;
@@ -328,54 +328,44 @@ nav {
 /* SECTION 2 */
 
 .section2 {
-  padding: 0 0.8em;
+  padding: 0 0.8rem;
   text-align: center;
 }
 
 .section2 .txt1 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
-  line-height: 1.2em;
   color: var(--dark-blue);
 }
 
 .section2 .txt2,
 .section2 .txt3 {
-  line-height: 1.5em;
-  font-size: 1em;
+  font-size: 1rem;
   color: var(--medium-blue);
 }
 
 @media (min-width: 720px) {
   .section2 {
-    padding: 0 1.5em;
+    padding: 0 1.5rem;
   }
 
   .section2 .txt1 {
-    font-size: 1.8em;
-    line-height: unset;
+    font-size: 1.8rem;
   }
 
   .section2 .txt2,
   .section2 .txt3 {
-    line-height: unset;
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 }
 
 @media (min-width: 992px) {
   .section2 {
-    padding: 0 4.8em;
+    padding: 0 4.8rem;
   }
 
   .section2 .txt1 {
-    font-size: 2.4em;
-    line-height: 1.4em;
-  }
-
-  .section2 .txt2,
-  .section2 .txt3 {
-    line-height: unset;
+    font-size: 2.4rem;
   }
 }
 
@@ -385,7 +375,7 @@ nav {
 }
 
 .section3 .txt {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   font-weight: bold;
   color: var(--dark-blue);
 }
@@ -394,7 +384,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .section3 .s3card {
@@ -406,18 +396,19 @@ nav {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  cursor: default;
 }
 
 .section3 .s3card {
   .txt1 {
     color: var(--dark-blue);
     font-weight: bold;
-    font-size: 1.4em;
-    margin-top: 0.8em;
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
     text-align: center;
   }
   .txt2 {
-    margin-top: 0.8em;
+    margin-top: 0.8rem;
     color: var(--medium-blue);
     text-align: center;
   }
@@ -439,13 +430,21 @@ nav {
 }
 
 .section3 .s3card svg {
-  width: 5em;
-  height: 5em;
+  width: 5rem;
+  height: 5rem;
+}
+
+@media (min-width: 321px) {
+  .section3 .s3card {
+    .txt1 {
+      font-size: 1.4rem;
+    }
+  }
 }
 
 @media (min-width: 992px) {
   .section3 .txt {
-    font-size: 2.4em;
+    font-size: 2.4rem;
   }
   .section3 .s3card {
     width: 85%;
@@ -455,7 +454,7 @@ nav {
 
 // SECTION 4
 .section4 {
-  padding: 0 1em;
+  padding: 0 1rem;
 }
 
 .section4 .img {
@@ -464,7 +463,7 @@ nav {
 
 .section4 .title {
   font-weight: bold;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   color: var(--dark-blue);
 }
 
@@ -477,15 +476,15 @@ nav {
   box-shadow: 0px 3px 0px #fec73d;
   background-color: #fec73d8c;
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   border-radius: 5px;
-  height: 5em;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   color: var(--dark-blue);
-  font-size: .7em;
+  font-size: 0.7rem;
 }
 
 .section4 .step .step-content {
@@ -496,16 +495,49 @@ nav {
   display: inline-block;
   background-color: #fff;
   border-radius: 50px;
-  width: 2em;
-  height: 2em;
+  width: 2rem;
+  height: 2rem;
   text-align: center;
 }
 
 .section4 .step .number {
-  vertical-align: sub;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .section4 .step .name {
   text-align: left;
-  vertical-align: sub;
+}
+
+@media (min-width: 361px) {
+  .section4 .step {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .section4 img {
+    width: unset !important;
+    max-width: 100%;
+    max-height: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .section4 .row {
+    height: auto;
+    padding: 0 4.8rem;
+  }
+  .section4 {
+    padding: 0;
+  }
+  .section4 .title {
+    font-size: 2.4rem;
+  }
+  .section4 .step .step-content {
+    font-size: 1.2rem;
+  }
 }
