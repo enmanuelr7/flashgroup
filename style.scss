@@ -113,7 +113,6 @@ nav {
     var(--dark-blue)
   );
   color: #fff;
-  //box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
   border-radius: 30px;
   display: inline-block;
   font-weight: bold;
@@ -122,6 +121,23 @@ nav {
   padding: 0.3rem 0.8rem;
   font-size: 1.4rem;
   width: 100%;
+}
+// Animation SECTION 1 BUTTON
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .section1 .col2 {
