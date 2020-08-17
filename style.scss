@@ -443,13 +443,38 @@ nav {
 }
 
 .section4 .step {
-  // background-image: linear-gradient(135deg, #fec63dfa, #ffd263fa);
-  box-shadow: 0px 3px 0px #fec73d;
-  background-color: #fec73d8c;
   width: 100%;
   margin-bottom: 1rem;
-  border-radius: 5px;
   height: 5rem;
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.section4 .step .step-content {
+  width: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  height: 100%;
+}
+
+.step:hover .step-content {
+  transform: rotateX(180deg);
+}
+
+.step .front,
+.step .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  background-color: #fec73d60;
+  box-shadow: 0px 3px 0px #fec73d;
+  border-radius: 8px;
+}
+
+.step .front {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -458,8 +483,23 @@ nav {
   font-size: 0.7rem;
 }
 
-.section4 .step .step-content {
+.step .front-content {
   width: 85%;
+}
+
+.step .back {
+  color: var(--medium-blue);
+  transform: rotateX(180deg);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step .back-content {
+  font-size: .6rem;
+  width: 90%;
 }
 
 .section4 .step .circle {
@@ -484,19 +524,22 @@ nav {
 }
 
 @media (min-width: 360px) {
-  .section4 .step {
+  .section4 .step .front {
     font-size: 0.8rem;
   }
 }
 
 @media (min-width: 375px) {
-  .section4 .step {
+  .section4 .step .front {
     font-size: 0.9rem;
+  }
+  .section4 .step .back-content {
+    font-size: 0.7rem;
   }
 }
 
 @media (min-width: 405px) {
-  .section4 .step {
+  .section4 .step .front {
     font-size: 1rem;
   }
 }
@@ -507,19 +550,25 @@ nav {
     max-width: 100%;
     max-height: 80%;
   }
-  .section4 .step {
+  .section4 .step .front {
+    font-size: 0.6rem;
+  }
+  .section4 .step .back-content {
     font-size: 0.6rem;
   }
 }
 
 @media (min-width: 650px) {
-  .section4 .step {
+  .section4 .step .front {
     font-size: 0.7rem;
   }
 }
 
 @media (min-width: 768px) {
-  .section4 .step {
+  .section4 .step .front {
+    font-size: 0.8rem;
+  }
+  .section4 .step .back-content {
     font-size: 0.8rem;
   }
 }
@@ -532,8 +581,20 @@ nav {
   .section4 {
     padding: 0;
   }
-  .section4 .step .step-content {
+  .section4 .step .front-content {
+    font-size: 1rem;
+  }
+  .section4 .step .back-content {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  .section4 .step .front-content {
     font-size: 1.2rem;
+  }
+  .section4 .step .back-content {
+    font-size: 1rem;
   }
 }
 
