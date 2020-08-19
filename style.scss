@@ -548,13 +548,13 @@ nav {
   .section4 img {
     width: unset !important;
     max-width: 100%;
-    max-height: 80%;
+    max-height: 100%;
   }
   .section4 .step .front {
     font-size: 0.6rem;
   }
   .section4 .step .back-content {
-    font-size: 0.6rem;
+    font-size: 0.65rem;
   }
 }
 
@@ -562,15 +562,16 @@ nav {
   .section4 .step .front {
     font-size: 0.7rem;
   }
+  .section4 .step .back-content {
+    font-size: 0.8rem;
+  }
 }
 
 @media (min-width: 768px) {
   .section4 .step .front {
     font-size: 0.8rem;
   }
-  .section4 .step .back-content {
-    font-size: 0.8rem;
-  }
+  
 }
 
 @media (min-width: 992px) {
