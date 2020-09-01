@@ -272,20 +272,20 @@ nav {
 
 /* Animation Fade In */
 
-.section1 .txt {
-  animation: fadeIn 2s forwards;
-}
+// .section1 .txt {
+//   animation: fadeIn 3s forwards;
+// }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-2rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+// @keyframes fadeIn {
+//   from {
+//     opacity: 0;
+//     transform: translateY(-2rem);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
 
 /* Animation Grow Shadow */
 .hvr-grow-shadow {
@@ -403,10 +403,14 @@ nav {
 
   svg .fig1 {
     fill: #fec63d99;
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-property: transform;
+    -webkit-transition-property: transform;
   }
 
   svg .fig2 {
-    fill: #232547;
+    fill: var(--dark-blue);
   }
 
   .txt1 {
@@ -524,7 +528,7 @@ nav {
   padding: 0 1rem;
 }
 
-.section4 .img {
+.section4 .office-img {
   width: 85%;
 }
 

@@ -282,37 +282,6 @@ nav {
 }
 
 /* Animation Fade In */
-.section1 .txt {
-  -webkit-animation: fadeIn 2s forwards;
-          animation: fadeIn 2s forwards;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-2rem);
-            transform: translateY(-2rem);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-2rem);
-            transform: translateY(-2rem);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
 /* Animation Grow Shadow */
 .hvr-grow-shadow {
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -475,10 +444,17 @@ nav {
 
 .section3 .s3card svg .fig1 {
   fill: #fec63d99;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-property: transform;
 }
 
 .section3 .s3card svg .fig2 {
-  fill: #232547;
+  fill: var(--dark-blue);
 }
 
 .section3 .s3card .txt1 {
@@ -597,7 +573,7 @@ nav {
   padding: 0 1rem;
 }
 
-.section4 .img {
+.section4 .office-img {
   width: 85%;
 }
 
