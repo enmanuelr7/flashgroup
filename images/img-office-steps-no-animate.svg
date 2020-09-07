@@ -7,27 +7,6 @@
             opacity: 0;
         }
 
-        svg#freepik_stories-data.animated #freepik--charts-1--inject-42 {
-            animation: 3s Infinite linear floating;
-            opacity: 0;
-        }
-
-        @keyframes floating {
-            0% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-        }
-
         .animator-hidden {
             display: none;
         }
