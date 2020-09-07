@@ -8,6 +8,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/a46d891c7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Flash Group</title>
 </head>
 
@@ -79,7 +80,7 @@
                     </span>
                 </div>
                 <div class="col-12 col-lg-6 d-flex col2">
-                    <object data="./images/img-office-animate.svg" type="image/svg+xml" class="office-img-container">
+                    <object data="./images/img-office-no-animate.svg" type="image/svg+xml" class="office-img-container">
                         <!-- Fallback image -->
                         <img src="./images/img-office-animate.svg" alt="Office Meeting" class="office-img">
                     </object>
@@ -126,7 +127,7 @@
             </div>
             <div class="cards row no-gutters">
                 <div class="s3card-container col-12 col-lg-4">
-                    <div class="s3card p-3">
+                    <div class="s3card p-3" id="s3card-1" data-aos="fade-up">
                         <div class="svg-wrap">
                             <svg viewBox="-10 -10 80 80" xmlns="http://www.w3.org/2000/svg">
                                 <g class="fig1">
@@ -154,7 +155,7 @@
                     </div>
                 </div>
                 <div class="s3card-container col-12 col-lg-4">
-                    <div class="s3card p-3">
+                    <div class="s3card p-3" id="s3card-2" data-aos="fade-up">
                         <div class="svg-wrap">
                             <svg viewBox="-10 -10 80 80" xmlns="http://www.w3.org/2000/svg">
                                 <g class="fig1">
@@ -175,7 +176,7 @@
                     </div>
                 </div>
                 <div class="s3card-container col-12 col-lg-4">
-                    <div class="s3card p-3">
+                    <div class="s3card p-3" id="s3card-3" data-aos="fade-up">
                         <div class="svg-wrap">
                             <svg viewBox="-10 -10 80 80" xmlns="http://www.w3.org/2000/svg">
                                 <g class="fig1">
@@ -211,13 +212,14 @@
             </div>
             <div class="row no-gutters mt-4 mt-lg-5">
                 <div class="col-12 col-lg-6 d-flex col1 justify-content-center">
-                    <object data="./images/img-office-steps-animate.svg" type="image/svg+xml" class="office-img">
+                    <object data="./images/img-office-steps-no-animate.svg" type="image/svg+xml" class="office-img">
                         <!-- Fallback image -->
                         <img src="./images/img-office-steps-animate.svg" alt="Office Meeting" class="office-img">
                     </object>
                 </div>
                 <div class="col-12 mt-4 mt-lg-0 col-lg-6 d-flex col2 steps">
-                    <div class="step">
+                    <div class="step" data-aos="zoom-in" data-aos-anchor=".steps"
+                        data-aos-anchorPlacement="bottom-bottom">
                         <div class="step-content">
                             <div class="front">
                                 <div class="front-content">
@@ -236,7 +238,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="step">
+                    <div class="step" data-aos="zoom-in" data-aos-anchor=".steps"
+                        data-aos-anchorPlacement="bottom-bottom">
                         <div class="step-content">
                             <div class="front">
                                 <div class="front-content">
@@ -255,7 +258,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="step">
+                    <div class="step" data-aos="zoom-in" data-aos-anchor=".steps"
+                        data-aos-anchorPlacement="bottom-bottom">
                         <div class="step-content">
                             <div class="front">
                                 <div class="front-content">
@@ -274,7 +278,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="step">
+                    <div class="step" data-aos="zoom-in" data-aos-anchor=".steps"
+                        data-aos-anchorPlacement="bottom-bottom">
                         <div class="step-content">
                             <div class="front">
                                 <div class="front-content">
@@ -374,6 +379,15 @@
                 document.getElementById("navbar").style.top = "-5.6em";
             }
         };
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease',
+            once: true,
+            anchorPlacement: 'top-bottom',
+        })
     </script>
 </body>
 
